@@ -113,6 +113,7 @@
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
 		</dependency>
+
 		<!-- 依赖 基础工具 -->
 		<dependency>
 			<groupId>com.kakxix</groupId>
