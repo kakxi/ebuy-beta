@@ -1,9 +1,9 @@
 server:
-  port: 9011
+  port: 9110
 
 spring:
   application:
-    name: buy-user
+    name: buy-user-api
 
 eureka:
   client:

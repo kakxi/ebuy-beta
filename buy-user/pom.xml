@@ -41,11 +41,11 @@
 		</dependency>
 
 		<!-- 用户系统 服务接口 -->
-		<dependency>
+		<!--<dependency>
 			<groupId>com.kakxix</groupId>
 			<artifactId>buy-user-api</artifactId>
 			<version>1.0.0</version>
-		</dependency>
+		</dependency>-->
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>

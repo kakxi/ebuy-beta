@@ -1,8 +1,10 @@
 package com.kakxix.base.common.apigateway.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import com.kakxix.buy.user.api.service.HealthService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.Resource;
 
 /**
  * <P>
@@ -11,6 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class HealthController {
+
+    @Autowired
+    public HealthService healthService;
 
     /**
      * securitys
@@ -27,9 +32,9 @@ public class HealthController {
      *
      * @return
      */
-    @RequestMapping(value = "/ok")
-    public String ok() {
-        return "ok";
+    @RequestMapping(value = "/ok",method = RequestMethod.GET)
+    public String ok(@RequestParam String name) {
+        return healthService.ok(name);
     }
 
     /**
