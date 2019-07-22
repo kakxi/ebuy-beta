@@ -1,10 +1,8 @@
 package com.kakxix.base.common.apigateway.controller;
 
-import com.kakxix.buy.user.api.service.HealthService;
+import com.kakxix.buy.user.api.feign.HealthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import javax.annotation.Resource;
 
 /**
  * <P>
