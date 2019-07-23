@@ -9,6 +9,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+  instance:
+    metadata-map:
+      cluster: apigateway
 
 # 开启Hystrix
 feign:
