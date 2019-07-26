@@ -34,3 +34,13 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 60000  #命令执行超时时间，默认1000ms
+
+# zuul 路由设置
+zuul:
+  routes:
+    api-a:
+      path: /api/user/**
+      serviceId: buy-user
+    api-b:
+      path: /api/order/**
+      serviceId: buy-order
