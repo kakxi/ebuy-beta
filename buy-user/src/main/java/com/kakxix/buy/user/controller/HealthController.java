@@ -17,6 +17,19 @@ public class HealthController {
     @Value("${server.port}")
     private String port;
 
+    @Value("${base.sys.encryptKey}")
+    private String encryptKey;
+
+    /**
+     * securitys
+     *
+     * @return
+     */
+    @RequestMapping(value = "/key", method = RequestMethod.GET)
+    public String configOk() {
+        return "key: "+encryptKey;
+    }
+
     /**
      * securitys
      *
