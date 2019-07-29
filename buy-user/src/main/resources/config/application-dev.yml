@@ -1,10 +1,6 @@
 server:
   port: 9011
 
-spring:
-  application:
-    name: buy-user
-
 eureka:
   client:
     serviceUrl:
@@ -12,4 +8,5 @@ eureka:
 
 base:
   sys:
-    encryptKey: 456789123456789
+    encryptKey: 789789
+
